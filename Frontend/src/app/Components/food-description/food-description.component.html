@@ -1,14 +1,20 @@
 
-<div class="description  mt-3">
-    <div class="card">
+<div class="description row mt-3">
+    <div class="card col border-0">
         <div class="cardimage" style="width: 22rem;">
             <img src="{{mealDescription.strMealThumb}}" class="card-img-top" alt="...">
             <div class="card-body">
-            <p class="card-text">{{mealDescription.strMeal}}</p>
+            <p class="card-text"><strong>{{mealDescription.strMeal}}</strong></p>
             </div>
         </div>
     </div>
 
+    <div class="instruction col">
+      <tr>
+        <td></td><td><iframe width="560" height="315" [src]='safeUrl' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><td>
+        <td>
+
+    </div>
 </div>
 
 <div class="youTube text-center" >
@@ -16,20 +22,4 @@
     <p>{{mealDescription.strInstructions}}</p>
 </div>
 
-<div class="instruction border">
 
-  <tr>
-    <td>{{mealDescription.strMeal}}</td><td><iframe width="560" height="315" [src]='safeUrl' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><td>
-
-      <!-- <video width="320" height="240" controls>
-        <source src="{{mealDescription.strYoutube}}" type="video/mp4">
-        <source src="{{mealDescription.strYoutube}}" type="video/ogg">
-      Your browser does not support the video tag.
-      </video> -->
-      <!-- <iframe width="917" height="516" src="https://www.youtube.com/embed/RU65iH-WSnI" title="YouTube video player"  allowfullscreen></iframe> -->
-    <td>
-
-  
-  <!-- <iframe width="560" height="315" src="{{mealDescription.strYoutube}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  
-</div>
