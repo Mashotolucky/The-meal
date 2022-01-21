@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,8 @@ import { RecipeComponent } from './Components/recipe/recipe.component';
 import { FoodItemComponent } from './Components/food-item/food-item.component';
 import { FoodDescriptionComponent } from './Components/food-description/food-description.component';
 import { ReactiveFormsModule } from '@angular/forms';
+
+import {YouTubePlayerModule} from '@angular/youtube-player'
 
 
 @NgModule({
@@ -22,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

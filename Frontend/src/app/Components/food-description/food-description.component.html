@@ -1,56 +1,26 @@
 
-<div class="description row mt-3">
-    <div class="col">
-        <div class="card" style="width: 30rem;">
+<div class="description  mt-3">
+    <div class="card">
+        <div class="cardimage" style="width: 22rem;">
             <img src="{{mealDescription.strMealThumb}}" class="card-img-top" alt="...">
-            <!-- <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div> -->
+            <div class="card-body">
+            <p class="card-text">{{mealDescription.strMeal}}</p>
+            </div>
         </div>
     </div>
-    
-
-  <div class="row col row-cols-2 row-cols-md-3 px-5 ">
-    <div class="card col mt-2" style="width: 10rem;">
-        <img src="{{mealDescription.strIngredient1}}" class="card-img-top" alt="...">
-        <!-- <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div> -->
-      </div>
-
-      <div class="card col mt-2" style="width: 10rem;">
-        <img src="{{mealDescription.strIngredient2}}" class="card-img-top" alt="...">
-        <!-- <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div> -->
-      </div>
-
-      <div class="card col mt-2" style="width: 10rem;">
-        <img src="{{mealDescription.strIngredient3}}" class="card-img-top" alt="...">
-        <!-- <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div> -->
-      </div>
-
-      <div class="card col mt-2" style="width: 10rem;">
-        <img src="{{mealDescription.strIngredient3}}" class="card-img-top" alt="...">
-        <!-- <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div> -->
-      </div>
-
-      <div class="card col mt-2" style="width: 10rem;">
-        <img src="{{mealDescription.strIngredient4}}" class="card-img-top" alt="...">
-        <!-- <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div> -->
-      </div>
-  </div>
-
-  <div class="instruction text-center mt-3 fst-italic">
-      <h3>Instructions</h3>
-      <p>{{mealDescription.strInstructions}}</p>
-  </div>
 
 </div>
 
+<div class="youTube text-center" >
+  <h3>Instructions</h3>
+    <p>{{mealDescription.strInstructions}}</p>
+</div>
+
+<div class="instruction border">
+
+  <tr>
+    <td>{{mealDescription.strMeal}}</td><td><iframe width="560" height="315" [src]='safeUrl' frameborder="0" allowfullscreen></iframe><td>
+    <td>
+  <!-- <iframe width="560" height="315" src="{{mealDescription.strYoutube}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  
+</div>

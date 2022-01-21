@@ -39,3 +39,4 @@ export class FoodItemComponent implements OnInit {
   }  
 
 }
+
