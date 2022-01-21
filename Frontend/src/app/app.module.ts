@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {YouTubePlayerModule} from '@angular/youtube-player'
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import {YouTubePlayerModule} from '@angular/youtube-player'
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,6 +14,19 @@ export class FoodDescriptionComponent implements OnInit {
   safeUrl: any;
   url: string = '';
 
+  
+
+  constructor(private mealService: MealService,
+              private _sanitizer: DomSanitizer) {
+               
+               }
+
+  ngOnInit(): void {
+    this.foodDescription();
+    
+  }
+  
+  
   foodDescription(): void{
     this.mealService.getById()
     .subscribe(res =>{
@@ -31,29 +44,12 @@ export class FoodDescriptionComponent implements OnInit {
 
       console.log(this.url);
       
+      this.safeUrl = this._sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.url}`);
     },
     err =>{
       console.log(err);
       
     });
-  }
-
-  constructor(private mealService: MealService,
-              private _sanitizer: DomSanitizer) {
-               this.safeUrl = this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/" + this.url);
-               }
-
-  ngOnInit(): void {
-
-    
-
-    this.foodDescription();
-    
-
-    // const tag = document.createElement('script');
-   	// 	 tag.src = 'https://www.youtube.com/iframe_api';
-    // 		document.body.appendChild(tag);
-    
   }
 
   
