@@ -8,8 +8,9 @@ import { RecipeComponent } from './Components/recipe/recipe.component';
 import { FoodItemComponent } from './Components/food-item/food-item.component';
 import { FoodDescriptionComponent } from './Components/food-description/food-description.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FindItemComponent } from './Components/find-item/find-item.component';
 
-import {YouTubePlayerModule} from '@angular/youtube-player'
+
 
 
 
@@ -18,15 +19,14 @@ import {YouTubePlayerModule} from '@angular/youtube-player'
     AppComponent,
     RecipeComponent,
     FoodItemComponent,
-    FoodDescriptionComponent
+    FoodDescriptionComponent,
+    FindItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    YouTubePlayerModule,
-   
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
