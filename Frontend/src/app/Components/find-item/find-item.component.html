@@ -1,1 +1,30 @@
-<p>find-item works!</p>
+<div class="container-fluid">
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-4 ">
+            <form class="d-flex" [formGroup]="formSearch">
+                <input class="form-control me-2" formControlName="searchInput" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" (click)="searchTitle()" type="submit">Search</button>
+            </form>
+        </div>
+        
+
+        <div class="col d-flex justify-content-around">
+            <p class="list mt-2 px-3 fw-light"> All Meal</p>
+            <p class="list mt-2 px-3 fw-light"> Chicken</p>
+            <p class="list mt-2 px-3 fw-light"> Beef</p>
+            <p class="list mt-2 px-3 fw-light"> Fish</p>
+            <p class="list mt-2 px-3 fw-light"> Pizza</p>
+            
+        </div>
+    </div>
+
+    <div *ngFor="" class="card mt-2 border-0" style="width: 15rem;"  (click)="setMealId(meal.idMeal)" routerLink="/mealdescription">
+        <img src="{{meal.strMealThumb}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{meal.strMeal}}</h5>
+        </div>
+    </div>
+
+</div>

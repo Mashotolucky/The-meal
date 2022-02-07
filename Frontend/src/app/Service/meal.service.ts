@@ -23,10 +23,11 @@ export class MealService {
 
   setDetailMealId(id:any): void{
     this.mealId = id;
+    sessionStorage.setItem('mealId',this.mealId);
   }
 
   getById(): Observable<any>{
-    return this.http.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i='+this.mealId)
+    return this.http.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i='+sessionStorage.getItem('mealId'));
   }
 
 }
